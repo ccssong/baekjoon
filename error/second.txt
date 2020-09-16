@@ -1,0 +1,32 @@
+([rootProject] + (rootProject.subprojects as List)).each { project ->
+    project.repositories {
+        def unityProjectPath = $/file:///**DIR_UNITYPROJECT**/$.replace("\\", "/")
+        maven {
+            url "https://maven.google.com"
+        }
+        maven {
+            url "file:////Users/eunsong/Desktop/GalatianBot/Assets/Firebase/m2repository" // Assets/Firebase/Editor/DatabaseDependencies.xml:20, Packages/com.google.firebase.app/Firebase/Editor/AppDependencies.xml:20, Packages/com.google.firebase.auth/Firebase/Editor/AuthDependencies.xml:20
+        }
+        mavenLocal()
+        jcenter()
+        mavenCentral()
+    }
+}
+dependencies {
+    implementation 'com.google.firebase:firebase-analytics:17.4.1' // Packages/com.google.firebase.auth/Firebase/Editor/AuthDependencies.xml:15
+    implementation 'com.google.firebase:firebase-app-unity:6.15.2' // Packages/com.google.firebase.app/Firebase/Editor/AppDependencies.xml:20
+    implementation 'com.google.firebase:firebase-auth:19.3.1' // Packages/com.google.firebase.auth/Firebase/Editor/AuthDependencies.xml:13
+    implementation 'com.google.firebase:firebase-auth-unity:6.15.2' // Packages/com.google.firebase.auth/Firebase/Editor/AuthDependencies.xml:20
+    implementation 'com.google.firebase:firebase-common:19.3.0' // Packages/com.google.firebase.app/Firebase/Editor/AppDependencies.xml:13
+    implementation 'com.google.firebase:firebase-database:19.3.0' // Assets/Firebase/Editor/DatabaseDependencies.xml:13
+    implementation 'com.google.firebase:firebase-database-unity:19.3.0' // Assets/Firebase/Editor/DatabaseDependencies.xml:20
+}
+android {
+  packagingOptions {
+      exclude ('/lib/arm64-v8a/*' + '*')
+      exclude ('/lib/armeabi/*' + '*')
+      exclude ('/lib/mips/*' + '*')
+      exclude ('/lib/mips64/*' + '*')
+      exclude ('/lib/x86/*' + '*')
+      exclude ('/lib/x86_64/*' + '*')
+  }

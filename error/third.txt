@@ -1,0 +1,172 @@
+Running Gradle...
+
+/Users/eunsong/Desktop/GalatianBot/Temp/PlayServicesResolverGradle/gradlew --no-daemon -b "/Users/eunsong/Desktop/GalatianBot/Temp/PlayServicesResolverGradle/PlayServicesResolver.scripts.download_artifacts.gradle" "-PANDROID_HOME=/Applications/Unity/Hub/Editor/2019.4.9f1/PlaybackEngines/AndroidPlayer/SDK" "-PTARGET_DIR=/Users/eunsong/Desktop/GalatianBot/Assets/Plugins/Android" "-PMAVEN_REPOS=file:////Users/eunsong/Desktop/GalatianBot/Assets/Firebase/m2repository" "-PPACKAGES_TO_COPY=com.google.firebase:firebase-database:19.3.0;com.google.firebase:firebase-analytics:17.4.1;com.google.firebase:firebase-database-unity:19.3.0;com.google.firebase:firebase-common:19.3.0;com.google.firebase:firebase-app-unity:6.15.2;com.google.firebase:firebase-auth:19.3.1;com.google.firebase:firebase-auth-unity:6.15.2" "-PUSE_JETIFIER=1" "-PDATA_BINDING_VERSION=3.4.0"
+Executing command: /Users/eunsong/Desktop/GalatianBot/Temp/PlayServicesResolverGradle/gradlew --no-daemon -b "/Users/eunsong/Desktop/GalatianBot/Temp/PlayServicesResolverGradle/PlayServicesResolver.scripts.download_artifacts.gradle" "-PANDROID_HOME=/Applications/Unity/Hub/Editor/2019.4.9f1/PlaybackEngines/AndroidPlayer/SDK" "-PTARGET_DIR=/Users/eunsong/Desktop/GalatianBot/Assets/Plugins/Android" "-PMAVEN_REPOS=file:////Users/eunsong/Desktop/GalatianBot/Assets/Firebase/m2repository" "-PPACKAGES_TO_COPY=com.google.firebase:firebase-database:19.3.0;com.google.firebase:firebase-analytics:17.4.1;com.google.firebase:firebase-database-unity:19.3.0;com.google.firebase:firebase-common:19.3.0;com.google.firebase:firebase-app-unity:6.15.2;com.google.firebase:firebase-auth:19.3.1;com.google.firebase:firebase-auth-unity:6.15.2" "-PUSE_JETIFIER=1" "-PDATA_BINDING_VERSION=3.4.0"
+
+> Configure project :
+ANDROID_HOME: /Applications/Unity/Hub/Editor/2019.4.9f1/PlaybackEngines/AndroidPlayer/SDK
+MAVEN_REPOS: name=Google url=https://dl.google.com/dl/android/maven2/
+MAVEN_REPOS: name=maven url=https://dl.google.com/dl/android/maven2/
+MAVEN_REPOS: name=maven2 url=file:/Users/eunsong/Desktop/GalatianBot/Assets/Firebase/m2repository/
+MAVEN_REPOS: name=MavenLocal url=file:/Users/eunsong/.m2/repository
+MAVEN_REPOS: name=BintrayJCenter url=https://jcenter.bintray.com/
+MAVEN_REPOS: name=MavenRepo url=https://repo.maven.apache.org/maven2/
+PACKAGES_TO_COPY: com.google.firebase:firebase-database:19.3.0
+PACKAGES_TO_COPY: com.google.firebase:firebase-analytics:17.4.1
+PACKAGES_TO_COPY: com.google.firebase:firebase-database-unity:19.3.0
+PACKAGES_TO_COPY: com.google.firebase:firebase-common:19.3.0
+PACKAGES_TO_COPY: com.google.firebase:firebase-app-unity:6.15.2
+PACKAGES_TO_COPY: com.google.firebase:firebase-auth:19.3.1
+PACKAGES_TO_COPY: com.google.firebase:firebase-auth-unity:6.15.2
+TARGET_DIR: /Users/eunsong/Desktop/GalatianBot/Assets/Plugins/Android
+Resolution attempt 1: packages [com.google.firebase:firebase-auth:19.3.1, com.google.firebase:firebase-analytics:17.4.1, com.google.firebase:firebase-auth-unity:6.15.2, com.google.firebase:firebase-common:19.3.0, com.google.firebase:firebase-database:19.3.0, com.google.firebase:firebase-database-unity:19.3.0, com.google.firebase:firebase-app-unity:6.15.2]
+Resolve failed due to com.google.firebase:firebase-auth-unity:6.15.2 missing for project :, attempted to use com.google.firebase:firebase-auth-unity:6.15.2, failed due to org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find com.google.firebase:firebase-auth-unity:6.15.2.
+Resolve failed due to com.google.firebase:firebase-database-unity:19.3.0 missing for project :, attempted to use com.google.firebase:firebase-database-unity:19.3.0, failed due to org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find com.google.firebase:firebase-database-unity:19.3.0.
+Resolve failed due to com.google.firebase:firebase-app-unity:6.15.2 missing for project :, attempted to use com.google.firebase:firebase-app-unity:6.15.2, failed due to org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find com.google.firebase:firebase-app-unity:6.15.2.
+Resolution attempt: 1, conflicts detected: true, updated packages: true
+Resolution attempt 2: packages [com.google.firebase:firebase-auth:19.3.1, com.google.firebase:firebase-auth-unity:6.15.2+, com.google.firebase:firebase-database-unity:19.3.0+, com.google.firebase:firebase-analytics:17.4.1, com.google.firebase:firebase-common:19.3.0, com.google.firebase:firebase-database:19.3.0, com.google.firebase:firebase-app-unity:6.15.2+]
+Resolve failed due to com.google.firebase:firebase-auth-unity:6.15.2+ missing for project :, attempted to use com.google.firebase:firebase-auth-unity:6.15.2+, failed due to org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find any matches for com.google.firebase:firebase-auth-unity:6.15.2+ as no versions of com.google.firebase:firebase-auth-unity are available.
+Searched in the following locations:
+- https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-database-unity/maven-metadata.xml
+  - https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-database-unity/
+  - file:/Users/eunsong/Desktop/GalatianBot/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/maven-metadata.xml
+  - file:/Users/eunsong/.m2/repository/com/google/firebase/firebase-database-unity/maven-metadata.xml
+  - file:/Users/eunsong/.m2/repository/com/google/firebase/firebase-database-unity/
+  - https://jcenter.bintray.com/com/google/firebase/firebase-database-unity/maven-metadata.xml
+  - https://jcenter.bintray.com/com/google/firebase/firebase-database-unity/
+  - https://repo.maven.apache.org/maven2/com/google/firebase/firebase-database-unity/maven-metadata.xml
+  - https://repo.maven.apache.org/maven2/com/google/firebase/firebase-database-unity/
+Resolve failed due to com.google.firebase:firebase-app-unity:6.15.2+ missing for project :, attempted to use com.google.firebase:firebase-app-unity:6.15.2+, failed due to org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find any matches for com.google.firebase:firebase-app-unity:6.15.2+ as no versions of com.google.firebase:firebase-app-unity are available.
+Searched in the following locations:
+  - https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-app-unity/maven-metadata.xml
+  - https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-app-unity/
+  - file:/Users/eunsong/Desktop/GalatianBot/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/maven-metadata.xml
+  - file:/Users/eunsong/Desktop/GalatianBot/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/
+  - file:/Users/eunsong/.m2/repository/com/google/firebase/firebase-app-unity/maven-metadata.xml
+  - file:/Users/eunsong/.m2/repository/com/google/firebase/firebase-app-unity/
+  - https://jcenter.bintray.com/com/google/firebase/firebase-app-unity/maven-metadata.xml
+  - https://jcenter.bintray.com/com/google/firebase/firebase-app-unity/
+  - https://repo.maven.apache.org/maven2/com/google/firebase/firebase-app-unity/maven-metadata.xml
+  - https://repo.maven.apache.org/maven2/com/google/firebase/firebase-app-unity/
+Resolution attempt: 2, conflicts detected: true, updated packages: true
+Resolution attempt 3: packages [com.google.firebase:firebase-auth:19.3.1, com.google.firebase:firebase-auth-unity:6.15.+, com.google.firebase:firebase-app-unity:6.15.+, com.google.firebase:firebase-analytics:17.4.1, com.google.firebase:firebase-database-unity:19.3.+, com.google.firebase:firebase-common:19.3.0, com.google.firebase:firebase-database:19.3.0]
+Resolve failed due to com.google.firebase:firebase-auth-unity:6.15.+ missing for project :, attempted to use com.google.firebase:firebase-auth-unity:6.15.+, failed due to org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find any matches for com.google.firebase:firebase-auth-unity:6.15.+ as no versions of com.google.firebase:firebase-auth-unity are available.
+Resolve failed due to com.google.firebase:firebase-app-unity:6.15.+ missing for project :, attempted to use com.google.firebase:firebase-app-unity:6.15.+, failed due to org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find any matches for com.google.firebase:firebase-app-unity:6.15.+ as no versions of com.google.firebase:firebase-app-unity are available.
+Resolution attempt: 4, conflicts detected: true, updated packages: true
+Resolution attempt 5: packages [com.google.firebase:firebase-auth:19.3.1, com.google.firebase:firebase-auth-unity:6.+, com.google.firebase:firebase-analytics:17.4.1, com.google.firebase:firebase-common:19.3.0, com.google.firebase:firebase-database:19.3.0, com.google.firebase:firebase-app-unity:6.+, com.google.firebase:firebase-database-unity:19.+]
+Resolve failed due to com.google.firebase:firebase-auth-unity:6.+ missing for project :, attempted to use com.google.firebase:firebase-auth-unity:6.+, failed due to org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find any matches for com.google.firebase:firebase-auth-unity:6.+ as no versions of com.google.firebase:firebase-auth-unity are available.
+Resolve failed due to com.google.firebase:firebase-app-unity:6.+ missing for project :, attempted to use com.google.firebase:firebase-app-unity:6.+, failed due to org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find any matches for com.google.firebase:firebase-app-unity:6.+ as no versions of com.google.firebase:firebase-app-unity are available.
+Resolve failed due to com.google.firebase:firebase-database-unity:19.+ missing for project :, attempted to use com.google.firebase:firebase-database-unity:19.+, failed due to org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find any version that matches com.google.firebase:firebase-database-unity:19.+.
+Versions that do not match: 6.15.2
+Resolution attempt: 5, conflicts detected: true, updated packages: true
+Resolution attempt 6: packages [com.google.firebase:firebase-auth:19.3.1, com.google.firebase:firebase-analytics:17.4.1, com.google.firebase:firebase-common:19.3.0, com.google.firebase:firebase-app-unity:6+, com.google.firebase:firebase-auth-unity:6+, com.google.firebase:firebase-database:19.3.0, com.google.firebase:firebase-database-unity:19+]
+Resolve failed due to com.google.firebase:firebase-app-unity:6+ missing for project :, attempted to use com.google.firebase:firebase-app-unity:6+, failed due to org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find any matches for com.google.firebase:firebase-app-unity:6+ as no versions of com.google.firebase:firebase-app-unity are available.
+Resolve failed due to com.google.firebase:firebase-auth-unity:6+ missing for project :, attempted to use com.google.firebase:firebase-auth-unity:6+, failed due to org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find any matches for com.google.firebase:firebase-auth-unity:6+ as no versions of com.google.firebase:firebase-auth-unity are available.
+Resolve failed due to com.google.firebase:firebase-database-unity:19+ missing for project :, attempted to use com.google.firebase:firebase-database-unity:19+, failed due to org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find any version that matches com.google.firebase:firebase-database-unity:19+.
+Versions that do not match: 6.15.2
+
+Resolution attempt: 6, conflicts detected: true, updated packages: true
+Resolution attempt 7: packages [com.google.firebase:firebase-auth:19.3.1, com.google.firebase:firebase-database-unity:+, com.google.firebase:firebase-app-unity:+, com.google.firebase:firebase-analytics:17.4.1, com.google.firebase:firebase-common:19.3.0, com.google.firebase:firebase-auth-unity:+, com.google.firebase:firebase-database:19.3.0]
+Resolve failed due to com.google.firebase:firebase-app-unity:+ missing for project :, attempted to use com.google.firebase:firebase-app-unity:+, failed due to org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find any matches for com.google.firebase:firebase-app-unity:+ as no versions of com.google.firebase:firebase-app-unity are available.
+Resolve failed due to com.google.firebase:firebase-auth-unity:+ missing for project :, attempted to use com.google.firebase:firebase-auth-unity:+, failed due to org.gradle.internal.resolve.ModuleVersionNotFoundException: Could not find any matches for com.google.firebase:firebase-auth-unity:+ as no versions of com.google.firebase:firebase-auth-unity are available.
+Resolution attempt: 7, conflicts detected: true, updated packages: false
+Unable to find a set of non-conflicting artifacts for packages [com.google.firebase:firebase-auth:19.3.1, com.google.firebase:firebase-database-unity:+, com.google.firebase:firebase-app-unity:+, com.google.firebase:firebase-analytics:17.4.1, com.google.firebase:firebase-common:19.3.0, com.google.firebase:firebase-auth-unity:+, com.google.firebase:firebase-database:19.3.0].
+version locked packages: []
+non-version locked packages: [com.google.firebase:firebase-auth:19.3.1, com.google.firebase:firebase-database-unity:+, com.google.firebase:firebase-app-unity:+, com.google.firebase:firebase-analytics:17.4.1, com.google.firebase:firebase-common:19.3.0, com.google.firebase:firebase-auth-unity:+, com.google.firebase:firebase-database:19.3.0]
+> Task :copy_androidx.annotation.annotation-1.1.0.jar
+> Task :copy_androidx.arch.core.core-common-2.0.0.jar
+> Task :copy_androidx.arch.core.core-runtime-2.0.0.aar
+> Task :copy_androidx.asynclayoutinflater.asynclayoutinflater-1.0.0.aar
+> Task :copy_androidx.collection.collection-1.0.0.jar
+> Task :copy_androidx.coordinatorlayout.coordinatorlayout-1.0.0.aar
+> Task :copy_androidx.core.core-1.0.0.aar
+> Task :copy_androidx.cursoradapter.cursoradapter-1.0.0.aar
+> Task :copy_androidx.customview.customview-1.0.0.aar
+> Task :copy_androidx.documentfile.documentfile-1.0.0.aar
+> Task :copy_androidx.drawerlayout.drawerlayout-1.0.0.aar
+> Task :copy_androidx.fragment.fragment-1.0.0.aar
+> Task :copy_androidx.interpolator.interpolator-1.0.0.aar
+> Task :copy_androidx.legacy.legacy-support-core-ui-1.0.0.aar
+> Task :copy_androidx.legacy.legacy-support-core-utils-1.0.0.aar
+> Task :copy_androidx.lifecycle.lifecycle-common-2.0.0.jar
+> Task :copy_androidx.lifecycle.lifecycle-livedata-2.0.0.aar
+> Task :copy_androidx.lifecycle.lifecycle-livedata-core-2.0.0.aar
+> Task :copy_androidx.lifecycle.lifecycle-runtime-2.0.0.aar
+> Task :copy_androidx.lifecycle.lifecycle-viewmodel-2.0.0.aar
+> Task :copy_androidx.loader.loader-1.0.0.aar
+> Task :copy_androidx.localbroadcastmanager.localbroadcastmanager-1.0.0.aar
+> Task :copy_androidx.print.print-1.0.0.aar
+> Task :copy_androidx.slidingpanelayout.slidingpanelayout-1.0.0.aar
+> Task :copy_androidx.swiperefreshlayout.swiperefreshlayout-1.0.0.aar
+> Task :copy_androidx.versionedparcelable.versionedparcelable-1.0.0.aar
+> Task :copy_androidx.viewpager.viewpager-1.0.0.aar
+> Task :process_com.google.android.gms.play-services-ads-identifier-17.0.0.aar
+> Task :process_com.google.android.gms.play-services-base-17.1.0.aar
+> Task :process_com.google.android.gms.play-services-basement-17.0.0.aar
+> Task :process_com.google.android.gms.play-services-measurement-17.4.1.aar
+> Task :process_com.google.android.gms.play-services-measurement-api-17.4.1.aar
+> Task :process_com.google.android.gms.play-services-measurement-base-17.4.1.aar
+> Task :process_com.google.android.gms.play-services-measurement-impl-17.4.1.aar
+> Task :process_com.google.android.gms.play-services-measurement-sdk-17.4.1.aar
+> Task :process_com.google.android.gms.play-services-measurement-sdk-api-17.4.1.aar
+> Task :process_com.google.android.gms.play-services-stats-17.0.0.aar
+> Task :process_com.google.android.gms.play-services-tasks-17.0.0.aar
+> Task :process_com.google.auto.value.auto-value-annotations-1.6.5.jar
+> Task :process_com.google.firebase.firebase-analytics-17.4.1.aar
+> Task :process_com.google.firebase.firebase-auth-19.3.1.aar
+> Task :process_com.google.firebase.firebase-auth-interop-19.0.0.aar
+> Task :process_com.google.firebase.firebase-common-19.3.0.aar
+> Task :process_com.google.firebase.firebase-components-16.0.0.aar
+> Task :process_com.google.firebase.firebase-database-19.3.0.aar
+> Task :process_com.google.firebase.firebase-database-collection-17.0.1.aar
+
+> Task :process_com.google.firebase.firebase-database-unity-6.15.2.aar
+> Task :process_com.google.firebase.firebase-iid-20.1.5.aar
+> Task :process_com.google.firebase.firebase-iid-interop-17.0.0.aar
+> Task :process_com.google.firebase.firebase-installations-16.2.1.aar
+> Task :process_com.google.firebase.firebase-installations-interop-16.0.0.aar
+> Task :process_com.google.firebase.firebase-measurement-connector-18.0.0.aar
+
+> Task :copyPackages
+Copied artifacts:
+androidx.annotation.annotation-1.1.0.jar
+androidx.arch.core.core-common-2.0.0.jar
+androidx.arch.core.core-runtime-2.0.0.aar
+androidx.asynclayoutinflater.asynclayoutinflater-1.0.0.aar
+androidx.collection.collection-1.0.0.jar
+androidx.coordinatorlayout.coordinatorlayout-1.0.0.aar
+androidx.core.core-1.0.0.aar
+androidx.cursoradapter.cursoradapter-1.0.0.aar
+androidx.customview.customview-1.0.0.aar
+androidx.documentfile.documentfile-1.0.0.aar
+androidx.drawerlayout.drawerlayout-1.0.0.aar
+androidx.fragment.fragment-1.0.0.aar
+androidx.interpolator.interpolator-1.0.0.aar
+androidx.legacy.legacy-support-core-ui-1.0.0.aar
+androidx.legacy.legacy-support-core-utils-1.0.0.aar
+androidx.lifecycle.lifecycle-common-2.0.0.jar
+androidx.lifecycle.lifecycle-livedata-2.0.0.aar
+androidx.lifecycle.lifecycle-livedata-core-2.0.0.aar
+androidx.lifecycle.lifecycle-runtime-2.0.0.aar
+androidx.lifecycle.lifecycle-viewmodel-2.0.0.aar
+androidx.loader.loader-1.0.0.aar
+androidx.localbroadcastmanager.localbroadcastmanager-1.0.0.aar
+androidx.print.print-1.0.0.aar
+androidx.slidingpanelayout.slidingpanelayout-1.0.0.aar
+androidx.swiperefreshlayout.swiperefreshlayout-1.0.0.aar
+androidx.versionedparcelable.versionedparcelable-1.0.0.aar
+androidx.viewpager.viewpager-1.0.0.aar
+com.google.android.gms.play-services-ads-identifier-17.0.0.aar
+com.google.android.gms.play-services-base-17.1.0.aar
+com.google.android.gms.play-services-basement-17.0.0.aar
+com.google.android.gms.play-services-measurement-17.4.1.aar
+com.google.android.gms.play-services-measurement-api-17.4.1.aar
+com.google.android.gms.play-services-measurement-base-17.4.1.aar
+com.google.android.gms.play-services-measurement-impl-17.4.1.aar
+com.google.android.gms.play-services-measurement-sdk-17.4.1.aar
+com.google.android.gms.play-services-measurement-sdk-api-17.4.1.aar
+com.google.android.gms.play-services-stats-17.0.0.aarWARNING: Some conflicting dependencies were found.
+The following dependency versions were modified:
+com.google.firebase:firebase-app-unity:6.15.2 --> com.google.firebase:firebase-app-unity:+
+com.google.firebase:firebase-auth-unity:6.15.2 --> com.google.firebase:firebase-auth-unity:+
+com.google.firebase:firebase-database-unity:19.3.0 --> com.google.firebase:firebase-database-unity:+

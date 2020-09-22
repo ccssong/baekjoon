@@ -1,83 +1,99 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
-#include <cstring>
-
+#include <string>
 using namespace std;
 
-vector<string> split(string command){
-    vector<string> str;
-    char *buffer = new char[1000];
-    strcpy(buffer, command.c_str());
-    char *tok = strtok(buffer, " ");
-    
-    if(tok == NULL)
-        str.push_back(string(tok));
-    else{
-        while(tok != NULL){
-            str.push_back(string(tok));
-            tok = strtok(NULL, " ");
-        }
-    }
+int n, S, x;
+string str;
 
-    return str;
-}
+int main(){     
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
 
-int main(){
-    int n;
     cin >> n;
-    cin.get();
 
-    vector<int> S;
-    for(int i=0; i<n; i++){
-        string command;
-        getline(cin, command);
-        
-        vector<string> str = split(command);
-        
-        if(str[0] == "add"){
-            int x = stoi(str[1]);
-            S.push_back(x);
+    while(n--){
+        str.clear();
+        cin >> str;
+
+        if(str == "add"){
+            cin >> x;
+            S |= (1 << x);
         }
-        else if(str[0] == "remove"){
-            int x = stoi(str[1]);
-            vector<int>::iterator iter;
-            iter = find(S.begin(), S.end(), x);
-            if(iter != S.end()){
-                S.erase(iter);
-            }
+        else if(str == "remove"){
+            cin >> x;
+            S &= ~(1 << x);
         }
-        else if(str[0] == "check"){
-            int x = stoi(str[1]);
-            vector<int>::iterator iter;
-            iter = find(S.begin(), S.end(), x);
-            if(iter != S.end()){
+        else if(str == "check"){
+            cin >> x;
+            if(S & (1<<x))
                 cout << 1 << endl;
-            }else{
+            else
                 cout << 0 << endl;
-            }
         }
-        else if(str[0] == "toggle"){
-            int x = stoi(str[1]);
-            vector<int>::iterator iter;
-            iter = find(S.begin(), S.end(), x);
-            if(iter != S.end()){
-                S.erase(iter);
-            }else{
-                S.push_back(x);
-            }
+        else if(str == "toggle"){
+            cin >> x;
+            S ^= (1<<x);
         }
-        else if(str[0] == "all"){
-            S.clear();
-            for(int i=1; i<=20; i++){
-                S.push_back(i);
-            }
+        else if(str == "all"){
+            S =  (1 << 21) - 1;
         }
-        else if(str[0] == "empty"){
-            S.clear();
+        else if(str == "empty"){
+           S = 0;
         }
-
-        
     }
+    
     return 0;
 }
+
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+ 
+// int M, num, BIT;
+// string input;
+ 
+// int main()
+// {
+//     ios::sync_with_stdio(false);
+//     cin.tie(NULL);
+//     cout.tie(NULL);
+ 
+//     cin >> M;
+//     while (M--)
+//     {
+//         input.clear();
+//         cin >> input;
+//         if (input == "add")
+//         {
+//             cin >> num;
+//             BIT |= (1 << num);
+//         }
+//         else if (input == "remove")
+//         {
+//             cin >> num;
+//             BIT &= ~(1 << num);
+//         }
+//         else if (input == "check")
+//         {
+//             cin >> num;
+//             if (BIT & (1 << num))    cout << 1 << '\n';
+//             else    cout << 0 << '\n';
+//         }
+//         else if (input == "toggle")
+//         {
+//             cin >> num;
+//             BIT ^= (1 << num);
+//         }
+//         else if (input == "all")
+//         {
+//             BIT = (1 << 21) - 1;
+//         }
+//         else if (input == "empty")
+//         {
+//             BIT = 0;
+//         }
+//     }
+//     return 0;
+// }

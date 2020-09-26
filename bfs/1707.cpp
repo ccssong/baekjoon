@@ -70,11 +70,20 @@ int main(){
             edge[end].push_back(start);
         }
 
-        int result = bfs(1);
-        if(result == 1)
-            cout << "YES" << endl;
-        else
-            cout << "NO" << endl;
+        for(int i=1; i<=n; i++){
+            if(!check[i]){
+                int result = bfs(i);
+                if(result == 1){
+                    cout << "YES" << endl;
+                    continue;
+                }
+                else{
+                    cout << "NO" << endl;
+                    break;
+                }
+                
+            }
+        }
         
 
         for(int j=1; j<n+1; j++)

@@ -1,2 +1,2 @@
- int n,m;
-        cin >> n >> m;
+
+        int x = q.front().first; int y = q.front().secon

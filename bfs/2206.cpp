@@ -5,16 +5,10 @@
 
 using namespace std;
 int a[1000][1000];
-int visited[1000][1000];
+int visited[1000][1000][2];
 int dx[4] = {1,0,-1,0};
 int dy[4] = {0,1,0,-1};
 int n,m;
-
-struct component{
-    int y;
-    int x;
-    int cnt;
-};
 
 bool isInside(int y, int x){
     if( 0 <= y && y < n && 0 <= x && x < m)
@@ -23,34 +17,35 @@ bool isInside(int y, int x){
 }
 
 int bfs(){
-    queue<component> q;
-    component c = {0,0,1};
-    q.push(c);
-    visited[0][0] = 1;
+    queue<pair<pair<int, int>, int > > q;
+    q.push(make_pair(make_pair(0,0),1));
+    visited[0][0][1] = 1;
 
     while(!q.empty()){
-        int y = q.front().y;
-        int x = q.front().x;
-        int cnt = q.front().cnt;
+        int y = q.front().first.first;
+        int x = q.front().first.second;
+        int cnt = q.front().second;
         q.pop();
 
         if(y == n-1 && x == m-1)
-            return visited[n-1][m-1];
+            return visited[n-1][m-1][cnt];
         
         for(int i=0; i<4; i++){
             int ny = y + dy[i];
             int nx = x + dx[i];
 
-            if(isInside(ny,nx) && a[ny][nx] == 1 && cnt == 1){
-                visited[ny][nx] = visited[y][x] + 1;
-                component c = {ny,nx,cnt-1};
-                q.push(c);
-            }
+            if(isInside(ny,nx)){
+                if(a[ny][nx] == 1 && cnt == 1 && visited[ny][nx][cnt] == 0){
+                    visited[ny][nx][cnt-1] = visited[y][x][cnt] + 1;
+                    q.push(make_pair(make_pair(ny,nx),cnt-1));
+                   // printf("1 -- ny: %d nx: %d cnt: %d\n",ny,nx,cnt);
+                }
 
-            if(isInside(ny,nx) && a[ny][nx] == 0 && visited[ny][nx] == 0){
-                visited[ny][nx] = visited[y][x] + 1;
-                component c = {ny,nx,cnt};
-                q.push(c);
+                if(a[ny][nx] == 0 && visited[ny][nx][cnt] == 0){
+                    visited[ny][nx][cnt] = visited[y][x][cnt] + 1;
+                    q.push(make_pair(make_pair(ny,nx),cnt));
+                  //  printf("0 -- ny: %d nx: %d cnt: %d\n",ny,nx,cnt);
+                }
             }
         }
     }

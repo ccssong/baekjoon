@@ -54,7 +54,7 @@ void find()
                 }
                 else
                 {
-                    mul = g[cnt2].second;
+                mul = g[cnt2].second;
                     cnt2++;
                     // cout << "g mul " << mul << ", cnt2: " << cnt2 << endl;
                 }

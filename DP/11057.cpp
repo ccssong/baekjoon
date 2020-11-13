@@ -23,7 +23,7 @@ int main(){
     int sum=0;
     for(int i=0; i<10; i++)
         sum = (sum + d[N][i]) % mod;
-    cout << sum << endl; 
+    cout << sum << endl; 76y4rhr
 
     return 0;
 }
